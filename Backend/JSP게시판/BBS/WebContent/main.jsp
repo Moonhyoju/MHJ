@@ -96,13 +96,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="images/1.jpg">
+					<img src="images/1.jpg" style="display:block; margin:0 auto; height: 200px">
 				</div>
 				<div class="item">
-					<img src="images/2.jpg">
+					<img src="images/2.jpg" style="display:block; margin:0 auto; height: 200px">
 				</div>
 				<div class="item">
-					<img src="images/3.jpg">
+					<img src="images/3.jpg" style="display:block; margin:0 auto; height: 200px">
 				</div>
 				
 			</div>
