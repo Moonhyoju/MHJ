@@ -1,0 +1,4 @@
+#Mon Jun 18 14:39:40 KST 2018
+base.0=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\63
+renamed.0=classes.dex
+file.0=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\63\\classes.dex
