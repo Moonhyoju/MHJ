@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gta58.project_main">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="웨더토커"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".dust" />
+        <activity android:name=".info" />
+        <activity android:name=".chart" />
+        <activity
+            android:name=".speech_main"
+            android:label="@string/title_activity_speech_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".speech1"
+            android:label="@string/title_activity_speech1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".speech2" />
+        <activity android:name=".speech3" />
+        <activity android:name=".speech4" />
+    </application>
+
+</manifest>
