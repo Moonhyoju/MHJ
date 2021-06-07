@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gta58.project_main.speech1$PlaceholderFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffdede">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background3"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="70dp"/>
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:src="@drawable/arrow2_left"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:src="@drawable/arrow2_right"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 날씨"
+            android:fontFamily="@font/chart"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/nowA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chart"
+            android:text="20℃"
+            android:textSize="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90dp"/>
+        <TextView
+            android:id="@+id/nowhigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최고 기온 :  22 ℃"
+            android:textSize="30dp"
+            android:fontFamily="@font/chart"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/nowlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최저 기온 :  16 ℃"
+            android:textSize="30dp"
+            android:layout_gravity="center|left"
+            android:fontFamily="@font/chart"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/chart"
+            android:layout_marginTop="160dp"
+            android:text="미세먼지" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/chart"
+            android:text="내일날씨" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

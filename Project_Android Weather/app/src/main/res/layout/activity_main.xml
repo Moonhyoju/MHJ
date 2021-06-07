@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gta58.project_main.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/background"
+    >  //background_sun, background_night, background_rain, background_snow
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#385723"
+                android:fontFamily="@font/main"
+                android:paddingTop="20dp"
+                android:paddingLeft="50dp"
+                android:textSize="90dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/colortext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main"
+                android:text="미세먼지"
+                android:layout_margin="10dp"
+                android:paddingLeft="120dp"
+                android:textColor="#385723"
+                android:textSize="17dp"/>
+
+            <Button
+                android:id="@+id/dust_face"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sun_dust2" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/colorview1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.3"
+        android:scrollbars="horizontal">
+
+        //sun, night, snow, rain
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="5px"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="#385723"
+
+                    />
+                <ImageView
+                    android:id="@+id/todayimg1"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_night" />
+                <TextView
+                    android:id="@+id/colortext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오전 12시"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textColor="#385723"
+
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview2"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg2"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_night" />
+                <TextView
+                    android:id="@+id/colortext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오전 3시"
+                    android:textColor="#385723"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview3"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg3"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+                <TextView
+                    android:id="@+id/colortext4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text="오전 6시"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview4"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg4"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+                <TextView
+                    android:id="@+id/colortext5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오전 9시"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textColor="#385723"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview5"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg5"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+                <TextView
+                    android:id="@+id/colortext9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오후 12시"
+                    android:fontFamily="@font/main"
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview20"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg6"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+                <TextView
+                    android:id="@+id/colortext6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text="오후 3시"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview6"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg7"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun"/>
+                <TextView
+                    android:id="@+id/colortext7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오후 6시"
+                    android:fontFamily="@font/main"
+                    android:textColor="#385723"
+                    android:gravity="center"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview7"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytx8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+                <ImageView
+                    android:id="@+id/todayimg8"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_night" />
+                <TextView
+                    android:id="@+id/colortext8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오후 9시"
+                    android:fontFamily="@font/main"
+                    android:gravity="center"
+                    android:textColor="#385723"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/colorview8"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목요일"
+                    android:fontFamily="@font/main"
+                    android:textColor="#385723"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+
+                <TextView
+                    android:id="@+id/futurerow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:textColor="#385723"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview9"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh1"
+                    android:layout_width="wrap_content"
+                    android:textColor="#385723"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview10"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금요일"
+                    android:fontFamily="@font/main"
+                    android:textColor="#385723"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_1" />
+
+                <TextView
+                    android:id="@+id/futurerow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview11"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview12"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="토요일"
+                    android:textColor="#385723"
+                    android:fontFamily="@font/main"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_cloud" />
+
+                <TextView
+                    android:id="@+id/futurerow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#385723"
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview13"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview14"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일요일"
+                    android:textColor="#385723"
+                    android:fontFamily="@font/main"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_1" />
+
+                <TextView
+                    android:id="@+id/futurerow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview15"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview16"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text="월요일"
+                    android:fontFamily="@font/main"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_sun" />
+
+                <TextView
+                    android:id="@+id/futurerow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview17"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\"
+                    android:textSize="20dp"
+                    android:textColor="#385723"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/colorview18"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_centerInParent="true"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/now6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text="화요일"
+                    android:fontFamily="@font/main"
+                    android:textSize="15dp"
+                    android:paddingRight="75dp"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/futureimg6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sun_rain" />
+
+                <TextView
+                    android:id="@+id/futurerow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:paddingLeft="45dp"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/colorview19"
+                    android:layout_width="1.5dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="#000000"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/futurehigh6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#385723"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

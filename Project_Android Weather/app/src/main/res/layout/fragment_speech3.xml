@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gta58.project_main.speech1$PlaceholderFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffefde">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background3"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="70dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:src="@drawable/arrow1_right"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미세 먼지"
+            android:fontFamily="@font/chart"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/dustnow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋음"
+            android:textSize="80dp"
+            android:fontFamily="@font/chart"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90dp"/>
+        <TextView
+            android:id="@+id/dustnow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미세 먼지   :"
+            android:textSize="25dp"
+            android:fontFamily="@font/chart"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="50dp"/>
+        <TextView
+            android:id="@+id/dustnow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초미세 먼지 :"
+            android:textSize="25dp"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/chart"
+            android:layout_marginLeft="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/chart"
+            android:text="날씨비교" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/chart"
+            android:text="현재날씨" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="185dp"
+            android:src="@drawable/arrow1_left" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

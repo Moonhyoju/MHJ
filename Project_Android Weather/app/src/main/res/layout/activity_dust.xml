@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dustbg"
+    >       //E0FFFF, FFEFD5, FFB6C1, F08080
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dust"
+        android:text="오늘의 미세먼지는 "
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"/>
+
+    //mask1, mask, mask3, mask4
+    <ImageView
+        android:id="@+id/dustimg"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mask2"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/dusttx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dust"
+        android:text=""
+        android:textSize="60dp"
+        android:layout_gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dust_cloud"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/chart"
+            android:text="미세먼지          "/>
+
+        <TextView
+            android:id="@+id/dusta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/chart"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+
+            android:textSize="18dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/dustb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/chart"
+            android:layout_marginLeft="30dp"
+
+            android:textSize="18dp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btninfo"
+            android:background="@drawable/info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/chart"
+
+            android:text="초미세먼지          "
+            android:textSize="18dp" />
+
+    </FrameLayout>
+</LinearLayout>
