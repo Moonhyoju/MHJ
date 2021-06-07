@@ -1,0 +1,19 @@
+#Mon Jun 18 14:39:42 KST 2018
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\70
+base.4=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\69
+base.3=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\73
+base.2=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\71
+base.1=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\74
+base.0=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\72
+file.5=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\70\\classes.dex
+file.4=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\69\\classes.dex
+file.3=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\73\\classes.dex
+file.2=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\71\\classes.dex
+file.1=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\74\\classes.dex
+file.0=C\:\\Users\\gta58\\AndroidStudioProjects\\project_main\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\72\\classes.dex
